@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <section className="bg-black h-22">
+      <section className="bg-white h-22">
       </section>
 
       {/* top banner */}
@@ -24,7 +24,8 @@ export default function Home() {
         {/* hero text */}
         <div className="flex-1 pl-5">
           <h1 className="text-brand-brown text-7xl">HI, I'M ALISON ZOU</h1>
-          <h3 className="text-brand-brown text-5xl mt-14">nice to meet you</h3>
+          <h3 className="text-brand-brown text-5xl font-light mt-14">nice to meet you 
+          <span className="text-4xl">  ₊✩‧₊˚౨ৎ˚₊✩‧₊</span></h3>
         </div>
 
         {/* hero image */}
@@ -79,9 +80,75 @@ export default function Home() {
       </div>
 
       {/* about me & interests section */}
-      <section className="mt-12 grid md:grid-cols-2 gap-8">
-        
+      <section className="my-12 grid md:grid-cols-2 gap-10">
+        <div className="ml-44">
+          <hr className="text-brand-brown"></hr>
+          <h2 className="mt-4 text-xl text-brand-brown">about me</h2>
+          <p className="mt-4 text-brand-brown">
+            I’m a junior studying computer science, art, and math at Vanderbilt University. I’m 
+            passionate about designing and building user-centered digital experiences, and I care 
+            deeply about accessibility. I work as a senior innovation fellow at the Wond’ry 
+            Innovation Center, where I’ve led user research and cross-functional collaboration on 
+            projects like improving driver accessibility with Nissan. On campus, I’m also actively 
+            engages as the president of Google Developer Group Vanderbilt, and vice president of 
+            Girls Who Code Vanderbilt chapter.
+          </p>
+        </div>
+
+        <div className="mr-45">
+          <hr className="text-brand-brown"></hr>
+          <h2 className="mt-4 text-xl text-brand-brown">current interests</h2>
+          <p className="mt-4 text-brand-brown">
+            <span className="italic font-semibold text-md">Watching</span>: the summer i turned pretty<br/>
+            <span className="italic font-semibold text-md">Listening</span>: charlotte dobre and kpop (nct, red velvet, aespa...)<br/>
+            <span className="italic font-semibold text-md">Wanting</span>: a red velvet world tour, f1 grand prix ticket, world cup ticker<br/>
+            <span className="italic font-semibold text-md">Fave sport</span>: formula 1
+          </p>
+        </div>
       </section>
+
+      {/* interests section */}
+      <section className="mb-20">
+        <h1 className="my-6 text-5xl text-brand-brown font-light text-center">Recent Fun Activities</h1>
+        <div className="flex flex-row gap-6 overflow-auto">
+          <Image
+            src="/activities/quebec-street.jpeg"
+            alt="activity 1"
+            width={250}
+            height={359}
+            className="rounded-lg w-full h-auto object-cover"
+          />
+          <Image
+            src="/activities/canada-sunset.jpeg"
+            alt="activity 2"
+            width={250}
+            height={359}
+            className="rounded-lg w-full h-auto object-cover"
+          />
+          <Image
+            src="/activities/quebec-dinner.jpeg"
+            alt="activity 3"
+            width={250}
+            height={359}
+            className="rounded-lg w-full h-auto object-cover"
+          />
+          <Image
+            src="/activities/montreal-koi.jpeg"
+            alt="activity 4"
+            width={250}
+            height={359}
+            className="rounded-lg w-full h-auto object-cover"
+          />
+          <Image
+            src="/activities/montreal-lilypads.jpeg"
+            alt="activity 5"
+            width={250}
+            height={359}
+            className="rounded-lg w-full h-auto object-cover"
+          />
+        </div>
+      </section>
+
     </>
   );
 }
