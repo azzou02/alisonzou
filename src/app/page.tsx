@@ -20,7 +20,7 @@ export default function Home() {
 
         {/* hero text */}
         <div className="flex-1 pl-5">
-          <h1 className="text-brand-brown text-7xl">HI, I'M ALISON ZOU</h1>
+          <h1 className="text-brand-brown text-7xl">HI, I&apos;M ALISON ZOU</h1>
           <h3 className="text-brand-brown text-5xl font-light mt-14">nice to meet you 
           <span className="text-4xl">  ₊✩‧₊˚౨ৎ˚₊✩‧₊</span></h3>
         </div>
@@ -82,11 +82,11 @@ export default function Home() {
           <hr className="text-brand-brown"></hr>
           <h2 className="mt-4 text-xl text-brand-brown">about me</h2>
           <p className="mt-4 text-brand-brown">
-            I’m a junior studying computer science, art, and math at Vanderbilt University. I’m 
+            I&apos;m a junior studying computer science, art, and math at Vanderbilt University. I&apos;m 
             passionate about designing and building user-centered digital experiences, and I care 
-            deeply about accessibility. I work as a senior innovation fellow at the Wond’ry 
-            Innovation Center, where I’ve led user research and cross-functional collaboration on 
-            projects like improving driver accessibility with Nissan. On campus, I’m also actively 
+            deeply about accessibility. I work as a senior innovation fellow at the Wond&apos;ry 
+            Innovation Center, where I&apos;ve led user research and cross-functional collaboration on 
+            projects like improving driver accessibility with Nissan. On campus, I&apos;m also actively 
             engages as the president of Google Developer Group Vanderbilt, and vice president of 
             Girls Who Code Vanderbilt chapter.
           </p>
