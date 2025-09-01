@@ -3,9 +3,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <section className="bg-white h-22">
-      </section>
-
       {/* top banner */}
       <div className="w-full">
         <Image
