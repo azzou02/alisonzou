@@ -2,102 +2,86 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <section className="bg-black h-22">
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* top banner */}
+      <div className="w-full">
+        <Image
+          src="/decorations/about-banner.png"
+          alt="hero banner"
+          width={1200}
+          height={285}
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
+      {/* hero section */}
+      <section className="bg-cream h-90 mx-45 -mt-56 mb-10 p-10 rounded-xl shadow-lg 
+                          flex flex-row justify-between gap-7 items-center text-left relative z-10">
+
+        {/* hero text */}
+        <div className="flex-1 pl-5">
+          <h1 className="text-brand-brown text-7xl">HI, I'M ALISON ZOU</h1>
+          <h3 className="text-brand-brown text-5xl mt-14">nice to meet you</h3>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        {/* hero image */}
+        <div className="relative flex-shrink-0 pr-12">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/decorations/yellow-frame.png"
+            alt="Instagram frame"
+            width={264}
+            height={380}
+            className="rounded-lg shadow-md rotate-3 object-cover relative z-10"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="/decorations/alison-profile.png"
+            alt="A photo of Alison Zou"
+            width={220}
+            height={282} 
+            className="absolute top-1/2 left-1/2 -translate-x-3/5 -translate-y-5/9 rotate-3 object-cover z-20"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
           <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            src="/decorations/orange.png"
+            alt="Orange sticker"
+            width={70}
+            height={70}
+            className="absolute right-8 bottom-28 z-30"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <Image
+            src="/decorations/star-button.png"
+            alt="Yellow star button"
+            width={90}
+            height={90}
+            className="absolute right-1 bottom-14 z-30"
+          />
+        </div>
+        
+      </section>
+
+      {/* flower divider */}
+      <div className="flex justify-center space-x-6 mt-9">
+          {Array.from({ length: 16 }, (_, i) => {
+            const flowerNumber = (i % 4) + 1;
+            return(
+              <Image
+                key={i}
+                src={`/decorations/flower${flowerNumber}.svg`}
+                alt="flower decoration"
+                width={45}
+                height={40}
+                className="object-cover"
+              />
+            );  
+          })}
+      </div>
+
+      {/* about me & interests section */}
+      <section className="mt-12 grid md:grid-cols-2 gap-8">
+        
+      </section>
+    </>
   );
 }

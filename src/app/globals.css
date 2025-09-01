@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --cream: #FEF7E9;
+  --brand-orange: #F5A623;
+  --brand-brown: #A0522D;
 }
 
 @theme inline {
@@ -10,17 +14,23 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-cream: var(--cream);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-brown: var(--brand-brown);
+
+  --font-family-sans: var(--font-josefin);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #0a0a0a;
+    --background: #ededed;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-josefin);
 }
