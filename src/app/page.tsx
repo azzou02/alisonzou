@@ -106,7 +106,7 @@ export default function Home() {
 
       {/* interests section */}
       <section className="mb-20">
-        <h1 className="my-6 text-5xl text-brand-brown font-light text-center">Recent Fun Activities</h1>
+        <h1 className="my-6 text-5xl text-brand-brown font-light text-center">Photo Dump 𐔌՞. .՞𐦯</h1>
         <div className="flex flex-row gap-6 overflow-auto">
           <Image
             src="/activities/quebec-street.jpeg"
