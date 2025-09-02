@@ -38,6 +38,7 @@ export default function Navbar() {
                     {/* <h3 className={linkCls}>UI/UX</h3>
                     <h3 className={linkCls}>Visual Design</h3>
                     <h3 className={linkCls}>New Media</h3> */}
+                    <Link href='/' className={linkCls}>About</Link>
                     <Link href="paintings" className={linkCls}>
                         Paintings
                     </Link>
