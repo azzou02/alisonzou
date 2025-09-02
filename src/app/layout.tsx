@@ -12,7 +12,7 @@ const josefin = Josefin_Sans({
 
 export const metadata: Metadata = {
   title: "alison zou",
-  description: "my portolio for ui/ux and other visual work",
+  description: "my portolio for ui/ux, visual, and software work",
 };
 
 export default function RootLayout({
