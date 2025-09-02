@@ -94,19 +94,17 @@ export default function Home() {
 
         <div className="mr-45">
           <hr className="text-brand-brown"></hr>
-          <h2 className="mt-4 text-xl text-brand-brown">current interests</h2>
+          <h2 className="mt-4 text-xl text-brand-brown">education</h2>
           <p className="mt-4 text-brand-brown">
-            <span className="italic font-semibold text-md">Watching</span>: the summer i turned pretty<br/>
-            <span className="italic font-semibold text-md">Listening</span>: charlotte dobre and kpop (nct, red velvet, aespa...)<br/>
-            <span className="italic font-semibold text-md">Wanting</span>: a red velvet world tour, f1 grand prix ticket, world cup ticker<br/>
-            <span className="italic font-semibold text-md">Fave sport</span>: formula 1
+            <br/>Vanderbilt University 2023-2027
+            <br/>Computer Science, Art, & Math
           </p>
         </div>
       </section>
 
-      {/* interests section */}
+      {/* photo section */}
       <section className="mb-20">
-        <h1 className="my-6 text-5xl text-brand-brown font-light text-center">Photo Dump 𐔌՞. .՞𐦯</h1>
+        <h1 className="my-6 pt-8 text-5xl text-brand-brown font-light text-center">Photo Dump 𐔌՞. .՞𐦯</h1>
         <div className="flex flex-row gap-6 overflow-auto">
           <Image
             src="/activities/quebec-street.jpeg"
