@@ -12,11 +12,13 @@ type Theme = {
 
 const THEMES: Record<string, Theme> = {
   default: {
-    bg: 'bg-cover bg-center bg-no-repeat',
-    bgImg: "/decorations/about-banner.png",  
-    text: 'text-white',
+    // bg: 'bg-cover bg-center bg-no-repeat',
+    bg: 'bg-white',
+    // bgImg: "/decorations/about-banner.png",  
+    // text: 'text-white',
+    text: 'text-brand-brown',
     hover: 'hover:text-amber-200',
-    overlay: 'bg-gradient-to-b from-brand-brown via-brand-brown/30 to-transparent',
+    // overlay: 'bg-gradient-to-b from-brand-pink/60 via-orange-500/50 to-transparent',
   },
   '/paintings': {
     bg: 'bg-white',
@@ -45,13 +47,11 @@ export default function Navbar() {
                 </Link>
 
                 <div className="flex items-center space-x-8 text-lg">
-                    {/* <h3 className={linkCls}>UI/UX</h3>
-                    <h3 className={linkCls}>Visual Design</h3>
-                    <h3 className={linkCls}>New Media</h3> */}
+                    {/* <Link href='/' className={linkCls}>UI/UX</Link>
+                    <Link href='/' className={linkCls}>New Media</Link> */}
+                    <Link href='visuals' className={linkCls}>Visual Work</Link>
+                    <Link href="paintings" className={linkCls}>Paintings</Link>
                     <Link href='/' className={linkCls}>About</Link>
-                    <Link href="paintings" className={linkCls}>
-                        Paintings
-                    </Link>
                 </div>
             </nav>
         </header>

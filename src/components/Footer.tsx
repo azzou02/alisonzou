@@ -4,12 +4,12 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-24 bg-cream text-brand-brown 
+    <footer className="relative mt-24 bg-footer-blue text-cream 
                        overflow-hidden min-h-[16rem]">
-      {/* BIG NAME IN BACKGROUND */}
-      <div className="absolute inset-x-0 bottom-[-0.2em] z-0 flex justify-start pl-20">
-        <span className="select-none font-extrabold uppercase leading-none tracking-tight text-brand-brown/10 text-[22vw] md:text-[14vw] lg:text-[12vw] whitespace-nowrap">
-          ALISON ZOU
+
+      <div className="absolute inset-x-0 bottom-[-0.2em] z-0 flex justify-start pl-22">
+        <span className="select-none font-extrabold leading-none tracking-tight text-cream/35 text-[22vw] md:text-[14vw] lg:text-[12vw] whitespace-nowrap">
+          alison zou
         </span>
       </div>
 
@@ -76,7 +76,7 @@ function IconLink({
       target="_blank"
       rel="noreferrer"
       aria-label={label}
-      className="inline-flex h-10 w-10 items-center justify-center rounded-md ring-1 ring-brand-brown/20 hover:bg-brand-brown/10 transition text-brand-brown"
+      className="inline-flex h-10 w-10 items-center justify-center rounded-md ring-1 ring-cream/20 hover:bg-cream/10 transition text-cream"
       title={label}
     >
       <span className="sr-only">{label}</span>
