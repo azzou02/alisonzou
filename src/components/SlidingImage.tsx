@@ -29,7 +29,7 @@ export default function SlidingImage({
         height={256}
         className={`absolute top-1/2 -translate-y-1/2 animate-slide-h
                     motion-reduce:animate-none ${className}`}
-        style={{ ['--slide-duration' as any]: `${durationMs}ms` }}
+        style={{ ['--slide-duration']: `${durationMs}ms` } as React.CSSProperties }
         priority
       />
     </div>
