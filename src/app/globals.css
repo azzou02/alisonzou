@@ -7,6 +7,17 @@
   --cream: #FEF7E9;
   --brand-orange: #F5A623;
   --brand-brown: #A0522D;
+  --brand-pink: #e366a2;
+  --footer-blue: #5676b0;
+}
+
+@keyframes slide-h {
+  0%   { left: -25%; }
+  100% { left: 100%; }
+}
+
+@utility animate-slide-h {
+  animation: slide-h var(--slide-duration, 6s) linear infinite;
 }
 
 @theme inline {
@@ -18,6 +29,8 @@
   --color-cream: var(--cream);
   --color-brand-orange: var(--brand-orange);
   --color-brand-brown: var(--brand-brown);
+  --color-brand-pink: var(--brand-pink);
+  --color-footer-blue: var(--footer-blue);
 
   --font-family-sans: var(--font-josefin);
 }

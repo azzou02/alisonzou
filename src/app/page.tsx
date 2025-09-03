@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SlidingImage from "@/components/SlidingImage";
 
 export default function Home() {
   return (
@@ -61,23 +62,17 @@ export default function Home() {
 
       {/* flower divider */}
       <div className="flex justify-center space-x-6 mt-9">
-          {Array.from({ length: 16 }, (_, i) => {
-            const flowerNumber = (i % 4) + 1;
-            return(
-              <Image
-                key={i}
-                src={`/decorations/flower${flowerNumber}.svg`}
-                alt="flower decoration"
-                width={45}
-                height={40}
-                className="object-cover"
-              />
-            );  
-          })}
+          <Image
+            src="/decorations/border-figures.png"
+            alt="Yellow star button"
+            width={630}
+            height={90}
+            className="w-300"
+          />
       </div>
 
       {/* about me & interests section */}
-      <section className="my-12 grid md:grid-cols-2 gap-10">
+      <section className="mt-8 mb-12 grid md:grid-cols-2 gap-10">
         <div className="ml-44">
           <hr className="text-brand-brown"></hr>
           <h2 className="mt-4 text-xl text-brand-brown">about me</h2>
@@ -104,7 +99,7 @@ export default function Home() {
 
       {/* photo section */}
       <section className="mb-20">
-        <h1 className="my-6 pt-8 text-5xl text-brand-brown font-light text-center">Photo Dump 𐔌՞. .՞𐦯</h1>
+        <h1 className="my-6 pt-8 text-5xl text-brand-brown font-light text-center">Photo Dump ⋆.˚ ☾⭒.˚</h1>
         <div className="flex flex-row gap-6 overflow-auto">
           <Image
             src="/activities/quebec-street.jpeg"
@@ -144,6 +139,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* watching section */}
+      <section>
+        <h1 className="mt-6 pt-8 text-5xl text-brand-brown font-light text-center">Watching 𓇼 ⋆.˚ 𓆉 𓆝 𓆡⋆.˚ 𓇼</h1>
+        <SlidingImage src="/decorations/mclaren-car.png" alt="car" height={120} durationMs={4000} />
+      </section>
     </>
   );
 }
