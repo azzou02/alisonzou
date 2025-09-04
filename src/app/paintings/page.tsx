@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Paintings() {
     return (
-        <>
+        <main className="bg-brand-blue pb-14">
             <section>
-                <h1 className="text-brand-brown text-7xl text-center mt-15 mb-5">
+                <h1 className="text-white text-7xl text-center pt-10 pb-5">
                     Paintings
                 </h1>
             </section>
@@ -101,6 +101,6 @@ export default function Paintings() {
                     </div>
                 </div>
             </div>
-        </>
+        </main>
     )
 }

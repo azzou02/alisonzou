@@ -6,9 +6,11 @@
 
   --cream: #FEF7E9;
   --brand-orange: #F5A623;
+  --brand-orange2: #ffbb45;
   --brand-brown: #A0522D;
   --brand-pink: #e366a2;
   --footer-blue: #5676b0;
+  --brand-blue: #2e4775;
 }
 
 @keyframes slide-h {
@@ -28,9 +30,11 @@
 
   --color-cream: var(--cream);
   --color-brand-orange: var(--brand-orange);
+  --color-brand-orange2: var(--brand-orange2);
   --color-brand-brown: var(--brand-brown);
   --color-brand-pink: var(--brand-pink);
   --color-footer-blue: var(--footer-blue);
+  --color-brand-blue: var(--brand-blue);
 
   --font-family-sans: var(--font-josefin);
 }

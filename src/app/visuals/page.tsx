@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 export default function Visuals() {
     return (
-        <>
+        <main className="pb-14">
             <section>
-                <h1 className="text-brand-brown text-7xl text-center mt-15 mb-5">
+                <h1 className="text-brand-blue text-7xl text-center mt-10 mb-5">
                     Visual Work
                 </h1>
             </section>
@@ -75,6 +75,6 @@ export default function Visuals() {
                 </div>
             </section>
 
-        </>
+        </main>
     )
 }
